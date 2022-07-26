@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@font-face {
+    font-family: bebasNeue;
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: theBoldFont;
+    src: url("../fonts/theboldfont.ttf");
+}
+
+@font-face {
+    font-family: lemonMilk;
+    src: url("../fonts/lemonMilk.ttf");
+}
+
+@font-face {
+    font-family: gobold;
+    src: url("../fonts/gobold.ttf");
+}
+
+@font-face {
+    font-family: goboldHollow;
+    src: url("../fonts/goboldHollow.ttf");
+}
+
+.clearfix {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(-450deg, #03419e, #000000);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    width: 400px;
+    height: 500px;
+}
+
+#cuadro {
+    position: relative;
+    background: linear-gradient(to bottom, #013179e0 0%, transparent);
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+
+.titulo {
+    font-family: theBoldFont;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding-top: 35px;
+    text-align: center;
+    line-height: 45px;
+    height: 90%;
+    text-transform: uppercase;
+}
+
+#heading {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    overflow: hidden;
+}
+
+#back {
+    width: 100%;
+    padding-left: 5px;
+    height: 10%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+p {
+    margin-left: 30px;
+    padding-top: 5px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+#cuentaNueva {
+    text-align: center;
+    margin: 0;
+}
+
+p a {
+    text-decoration: none;
+    color: #002864e0;
+}
+
+p a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.btnLogIn {
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: bebasNeue;
+    font-size: 25px;
+    color: #002864e0;
+    letter-spacing: 4px;
+    text-align: center;
+    width: 220px;
+    height: 50px;
+    border: 2px solid #002864e0;
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnLogIn:hover {
+    background: #002864e0;
+    color: #fff;
+    border: #fff;
+}
+
+.btnLogIn:active {
+    opacity: 60%;
+    box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.664);
+}
+
+#copyright {
+    color: rgb(128, 128, 128);
+    opacity: 75%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+/* Botones con íconos*/
+
+#inicio {
+    margin-left: 117px;
+    height: 60px;
+    width: 160px;
+    background: none;
+    border: 2px solid #002864e0;
+    border-radius: 20px;
+    color: #002864e0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+#inicio #icon {
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    height: 100%;
+    border-radius: 4px;
+}
+
+#inicio #text {
+    float: left;
+    width: 70%;
+    height: 100%;
+    font-family: gobold;
+}
+
+#inicio:hover {
+    background: #002864e0;
+    color: #fff;
+    border: #002864e0;
+    box-shadow: 7px 7px 12px gray;
+}

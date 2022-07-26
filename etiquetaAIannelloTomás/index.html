@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Direccionamiento</title>
+        <link rel="stylesheet" href="css/estructura.css">
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <h1>Programación</h1> <hr>
+            </header>
+
+            <div class="clearfix"></div>
+            
+            <div class="clearfix"></div>
+
+            <section id="cuerpo">
+                <p class="parrafo">La programación es el proceso utilizado para idear y ordenar las acciones necesarias para realizar un proyecto. En la actualidad, la noción de programación se encuentra muy asociada a la creación de aplicaciones de informática y videojuegos. En este sentido, es el proceso por el cual una persona desarrolla un programa, valiéndose de una herramienta que le permita escribir el código (el cual puede estar en uno o varios lenguajes, como C++, Java y Python, entre muchos otros) y de otra que sea capaz de “traducirlo” a lo que se conoce como lenguaje de máquina, que puede "comprender" el microprocesador.</p>
+                <div id="indice">
+                    <div id="tituloIndice"><h4>Índice</h4></div>
+                    <ul>
+                        <li><a href="#Sec1">Léxico y Programación</a></li>
+                        <li><a href="#Sec2">Programas y Algoritmos</a></li>
+                        <li><a href="#Sec3">Compilación</a></li>
+                        <li><a href="#Sec4">Objetivos de la Programación</a></li>
+                    </ul>
+                </div>
+                <p class="parrafo">Para crear un programa y que la computadora lo interprete y ejecute, las instrucciones deben escribirse en un lenguaje de programación.</p>
+                <p class="parrafo">El lenguaje entendido por una computadora se conoce como código máquina. Consiste en secuencias de instrucciones básicas que el procesador reconoce, codificadas como cadenas de números 1 y 0 (sistema binario). En los primeros tiempos de la computación se programaba directamente en código máquina. Escribir programas así resultaba demasiado complicado, también era difícil entenderlos y mantenerlos una vez escritos. Con el tiempo, se fueron desarrollando herramientas para facilitar el trabajo. </p>
+                <p class="parrafo">Los primeros científicos que trabajaron en el área decidieron reemplazar las secuencias de unos y ceros por mnemónicos, que son abreviaturas en inglés de la función que cumple una instrucción de procesador. Por ejemplo, para sumar se podría usar la letra A de la palabra inglesa add (sumar). Crearon así una familia de lenguajes de mayor nivel, que se conocen como lenguaje ensamblador o simplemente ensamblador (en inglés, assembly). Con el tiempo los ensambladores incorporaron facilidades adicionales, pero siempre manteniendo una correspondencia directa con las instrucciones de procesador. A nivel conceptual, entonces, programar en ensamblador es muy similar a hacerlo en lenguaje máquina, solo que de una forma más amigable. </p>
+                
+                <h3 id="Sec1" class="subtitulo">Léxico y Programación</h3>
+                <p class="parrafo">La programación se rige por reglas y un conjunto más o menos reducido de órdenes, expresiones, instrucciones y comandos que tienden a asemejarse a una lengua natural acotada (en inglés); y que además tienen la particularidad de una reducida ambigüedad.</p>
+                <p class="parrafo"><b>En los lenguajes de programación se distinguen diversos elementos entre los que se incluyen el léxico propio del lenguaje y las reglas semánticas y sintácticas.</b> Dentro del léxico, generalmente se utilizan símbolos y palabras con funciones específicas dentro del lenguaje. Estas palabras suelen tomarse del inglés y no se las puede utilizar de manera diferente: son las denominadas palabras reservadas. Otra particularidad de los lenguajes es el permitir a los programadores el uso de comentarios: frases o parrafos sin funcionalidad en el programa, que los compiladores o intérpretes descartan y solo están destinados a ser leídos por personas; así se pueden dejar explicaciones que ayuden a entender el código a quien lo lea.</p>
+                
+                <h3 id="Sec2" class="subtitulo">Programas y Algoritmos</h3>
+                <p class="parrafo">Un algoritmo es una secuencia no ambigua, finita y ordenada de instrucciones que han de seguirse para resolver un determinado problema. Un programa normalmente implementa y contiene uno o más algoritmos. Un algoritmo puede expresarse de distintas maneras: en forma gráfica, como un diagrama de flujo, en forma de código como en pseudocódigo o un lenguaje de programación, en forma explicativa.</p>
+                <p class="parrafo">Los programas suelen subdividirse en partes menores, llamadas módulos, de modo que la complejidad algorítmica de cada una de las partes sea menor que la del programa completo, lo cual ayuda a simplificar el desarrollo del programa. Esta es una práctica muy utilizada y se conoce como "refino progresivo".</p>
+
+                <h3 id="Sec3" class="subtitulo">Compilación</h3>
+                <p class="parrafo">El programa escrito en un lenguaje de programación de alto nivel (fácilmente comprensible por el programador) es llamado programa fuente y no se puede ejecutar directamente en una computadora. La opción más común es compilar el programa obteniendo un módulo objeto, aunque también, si el lenguaje lo soporta, puede ejecutarse en forma directa pero solo a través de un intérprete. Algunos lenguajes, tal como BASIC, disponen de ambas formas de ejecución, lo cual facilita la tarea de depuración y prueba del programa.</p>
+                <p class="parrafo">El código fuente del programa se debe someter a un proceso de traducción para convertirlo a lenguaje máquina o bien a un código intermedio, generando así un módulo denominado "objeto". A este proceso se le llama compilación.</p>
+
+                <h3 id="Sec4" class="subtitulo">Objetivos de la Programación</h3>
+                <p class="parrafo">La programación debe perseguir la obtención de programas de calidad. Para ello se establece una serie de factores que determinan la calidad de un programa. Algunos de los factores de calidad más importantes son los siguientes:</p>
+                <ul>
+                    <li>Correctitud. Un programa es correcto si hace lo que debe hacer tal y como se estableció en las fases previas a su desarrollo. Para determinar si un programa hace lo que debe, es muy importante especificar claramente qué debe hacer el programa antes de su desarrollo y, una vez acabado, compararlo con lo que realmente hace. Al verificar este comportamiento está cumpliendo dicho objetivo.</li> 
+                    <li>Claridad. Es muy importante que el programa sea lo más claro y legible posible, para facilitar tanto su desarrollo como su posterior mantenimiento. Al elaborar un programa se debe intentar que su estructura sea sencilla y coherente, así como cuidar el estilo de programación. De esta forma se ve facilitado el trabajo del programador, tanto en la fase de creación como en las fases posteriores de corrección de errores, ampliaciones, modificaciones, etc. Fases que pueden ser realizadas incluso por otro programador, con lo cual la claridad es aún más necesaria para que otros puedan continuar el trabajo fácilmente. Algunos programadores llegan incluso a utilizar Arte ASCII para delimitar secciones de código; una práctica común es realizar aclaraciones en el mismo código fuente utilizando líneas de comentarios. </li>
+                    <li>Eficiencia. Se trata de que el programa, además de realizar aquello para lo que fue creado (es decir, que sea correcto), lo haga gestionando de la mejor forma posible los recursos que utiliza. Normalmente, al hablar de eficiencia de un programa, se suele hacer referencia al tiempo que tarda en realizar la tarea para la que ha sido creado y a la cantidad de memoria que necesita, pero hay otros recursos que también pueden ser de consideración para mejorar la eficiencia de un programa, dependiendo de su naturaleza (espacio en disco que utiliza, tráfico en la red que genera, etc.).</li>
+                    <li>Portabilidad. Un programa es portable cuando tiene la capacidad de poder ejecutarse en una plataforma, ya sea hardware o software, diferente a aquella en la que se desarrolló. La portabilidad es una característica muy deseable para un programa, ya que permite, por ejemplo, a un programa que se ha elaborado para el sistema GNU/Linux que también pueda ejecutarse en la familia de sistemas operativos Windows. Consecuentemente el programa puede llegar a más usuarios.</li>
+                </ul>
+            </section>
+
+            <aside>
+                <h2>Barra Lateral</h2>
+                <br><a href="html/pagSecundaria.html"><button id="logIn"> 
+                    <div id="icono"> <img src="#"> </div>
+                    <div id="texto"> <b>INICIAR SESIÓN</b> </div>
+                </button> </a>
+            </aside>
+
+            <div class="clearfix"></div>
+
+            <footer>
+                <p>Tomás Iannello © 2022</p>
+            </footer>
+        </div>
+
+    </body>
+
+</html>

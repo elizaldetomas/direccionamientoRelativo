@@ -1,0 +1,64 @@
+.container{
+    width: 450px;
+    height: 150px;
+    padding-left: 30px;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.container .entrada{
+    height: 40px;
+    width: 80%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.container .entrada input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.entrada input:focus ~ label,
+.entrada input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #002864;
+}
+
+.container .entrada label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #dbdbdb;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.entrada .lineaAbajo{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.entrada .lineaAbajo:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #002864;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.entrada input:focus ~ .lineaAbajo:before,
+.entrada input:valid ~ .lineaAbajo:before{
+  transform: scaleX(1);
+}
